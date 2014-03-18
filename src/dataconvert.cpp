@@ -11,7 +11,7 @@ int DataConvert::bytesToInt(QByteArray bytes)
     if (bytes.size() >= 3)
         integer |= ((bytes[2] << 16) & 0x00FF0000);
 
-    if (bytes.size() >= 3)
+    if (bytes.size() >= 4)
         integer |= ((bytes[3] << 24) & 0xFF000000);
 
     return integer;
